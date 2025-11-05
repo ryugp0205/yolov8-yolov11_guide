@@ -58,7 +58,3 @@ yolo task=detect mode=train data=coco128.yaml model=yolov11n.pt epochs=100
 
 # 추론 예시
 yolo task=detect mode=predict model=yolov11n.pt source='images/test.jpg'
-<img width="838" height="347" alt="image" src="https://github.com/user-attachments/assets/94b70edf-2afd-4bb6-8397-0418d05afd21" />
-
-<img width="853" height="441" alt="image" src="https://github.com/user-attachments/assets/a096346e-9cbd-4327-80dd-6169e9f72857" />
-
