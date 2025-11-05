@@ -58,8 +58,21 @@ pip install ultralytics
 yolo task=detect mode=train data=coco128.yaml model=yolov11n.pt epochs=100
 
 # 추론 예시
-yolo task=detect mode=predict model=yolov11n.pt source='images/test.jpg'
+yolo task=detect mode=predict model=yolov11n.pt source='images/test.jpg'''
 
+# 🚀 YOLOv11 설치 및 사용 가이드
+
+Ultralytics의 **YOLOv11**은 최신 객체 탐지(Object Detection) 모델입니다.  
+이 문서는 설치부터 학습, 추론, 모델 다운로드까지 빠르게 사용할 수 있도록 구성되어 있습니다.
+
+---
+
+## ⚙️ 1. 설치
+
+아래 명령어를 터미널에 입력하세요 👇
+
+```bash
+pip install ultralytics
 ## YOLO11 모델 다운로드
 
 | 모델 | 크기(픽셀) | mAPval 50-95 | 속도 CPU ONNX (ms) | 속도 T4 TensorRT10 (ms) | 파라미터 (M) | FLOPs (B) |
@@ -69,3 +82,4 @@ yolo task=detect mode=predict model=yolov11n.pt source='images/test.jpg'
 | [YOLO11m](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m.pt) | 640 | 51.5 | 183.2 ± 2.0 | 4.7 ± 0.1 | 20.1 | 68.0 |
 | [YOLO11l](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l.pt) | 640 | 53.4 | 318.4 ± 1.4 | 6.2 ± 0.1 | 25.3 | 86.9 |
 | [YOLO11x](https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x.pt) | 640 | 54.7 | 462.8 ± 6.7 | 11.3 ± 0.2 | 56.9 | 194.9 |
+
