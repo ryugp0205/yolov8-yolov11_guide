@@ -47,33 +47,6 @@ YOLO는 **실시간 객체 탐지(Object Detection)** 모델입니다.
 | Loss | 모델 학습 중 오류 측정 값 |
 
 ---
-
-## 4. YOLOv11 설치 및 사용 (간단 예시)
-
-```bash
-# YOLOv11 설치
-pip install ultralytics
-
-# 학습 예시
-yolo task=detect mode=train data=coco128.yaml model=yolov11n.pt epochs=100
-
-# 추론 예시
-yolo task=detect mode=predict model=yolov11n.pt source='images/test.jpg'''
-
-# 🚀 YOLOv11 설치 및 사용 가이드
-
-Ultralytics의 **YOLOv11**은 최신 객체 탐지(Object Detection) 모델입니다.  
-이 문서는 설치부터 학습, 추론, 모델 다운로드까지 빠르게 사용할 수 있도록 구성되어 있습니다.
-
----
-
-## ⚙️ 1. 설치
-
-아래 명령어를 터미널에 입력하세요 👇
-
-```bash
-pip install ultralytics
-## YOLO11 모델 다운로드
 | 모델 | 입력 크기 | mAP<sup>val</sup> 50-95 | CPU 속도 (ONNX) | T4 속도 (TensorRT10) | 파라미터(M) | FLOPs(B) | 다운로드 |
 |---|---|---|---|---|---|---|---|
 | YOLO11n | 640 | 39.5 | 56.1 ± 0.8 ms | 1.5 ± 0.0 ms | 2.6 | 6.5 | [⬇️ Download](https://your-download-link/yolo11n.pt) |
